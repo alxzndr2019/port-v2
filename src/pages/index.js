@@ -3,23 +3,48 @@ import { Inter, Source_Code_Pro } from "next/font/google";
 
 const inter = Inter({ subsets: ["latin"] });
 const Source = Source_Code_Pro({ subsets: ["latin"] });
-
+const projects = [
+  {
+    title: "Key stash",
+    description:
+      "Key stash is a secure, user-friendly application for managing your various keys and passwords. It uses state-of-the-art encryption to ensure your data is always safe.",
+    link: "link-to-project-1",
+  },
+  {
+    title: "Lets go",
+    description:
+      "Lets go is a social event planning application that helps you organize and discover events. It not only provides information about various events, but also allows you to create and share your own events. With its social features, you can connect with other attendees, share your experiences, and make your events more engaging and memorable.",
+    link: "link-to-project-2",
+  },
+  {
+    title: "Bionic Parser",
+    description:
+      "Bionic Parser is a powerful tool for parsing complex data structures. It uses advanced algorithms to accurately parse and extract information from various data formats.",
+    link: "link-to-project-3",
+  },
+  {
+    title: "Doormort",
+    description:
+      "Doormort is a comprehensive real estate application that simplifies the process of buying, selling, and renting properties. It provides a platform for property listings, virtual tours, price comparisons, and direct communication with real estate agents. With its intuitive interface and powerful features, Doormort makes real estate transactions easy and accessible for everyone.",
+    link: "link-to-project-4",
+  },
+];
 export default function Home() {
   return (
     <main
-      className={`flex min-h-screen flex-col items-center justify-between p-24 ${Source.className} text-[#00FF00]`}
+      className={`flex min-h-screen flex-col items-center justify-between p-4 sm:p-8 md:p-16 lg:p-24 ${Source.className} text-[#00FF00]`}
     >
       <div className="p-4 z-10 max-w-5xl w-full items-center font-mono text-sm ">
-        <h1 className="text-3xl">Full Stack Developer</h1>
+        <h1 className="text-3xl">Innovative Software Engineer</h1>
         <p className="mt-3">
-          Hi there, I am Ohioze Alex Omiunu, or just Alex. As a passionate and
-          versatile Full-Stack Developer, I specialize in crafting innovative
-          digital solutions that bring your ideas to life. With a strong
-          foundation in both front-end and back-end technologies, I have the
-          skills and expertise to create seamless, user-friendly web
-          applications. I'm committed to delivering not just code, but solutions
-          that solve real-world problems. Let's embark on a journey to turn your
-          concepts into captivating digital experiences.
+          Hello! I'm Ohioze Alex Omiunu, but you can call me Alex. I'm a
+          Software Engineer with a passion for turning ideas into reality. I
+          don't just write code; I create solutions that make a difference. With
+          a robust skill set in both front-end and back-end technologies, I
+          craft seamless, user-friendly web applications that users love and
+          clients admire. My commitment goes beyond delivering code; I provide
+          solutions that solve real-world problems. Let's transform your
+          concepts into impressive digital experiences together.
         </p>
 
         <div className="mt-3 w-[300px] flex justify-between gap-3">
@@ -107,6 +132,42 @@ export default function Home() {
             <li>Javascript</li>
             <li>Python</li>
           </a>
+        </div>
+      </div>
+      <div className="lg:max-w-5xl w-full mt-7">
+        <h1 className="p-4 text-3xl">Projects</h1>
+        <div className="p-4 mb-32 grid w-full text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-2 lg:text-left">
+          {projects.map((project, index) => (
+            <div
+              key={index}
+              className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
+            >
+              <h2 className={`mb-3 text-2xl font-semibold`}>{project.title}</h2>
+              <p>{project.description}</p>
+              <a href={project.link} className="underline cursor-pointer">
+                View Project
+              </a>
+            </div>
+          ))}
+        </div>
+      </div>
+
+      <div className="lg:max-w-5xl w-full mt-7">
+        <h1 className="p-4 text-3xl">Contact Me</h1>
+        <div className="p-4 mb-32 grid w-full text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-1 lg:text-left">
+          <div className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30">
+            <p>
+              If you have any questions or would like to discuss a project, feel
+              free to reach out to me at{" "}
+              <a
+                href="mailto:your-email@example.com"
+                className="underline cursor-pointer"
+              >
+                ohiozeomiunu@gmail.com
+              </a>
+              .
+            </p>
+          </div>
         </div>
       </div>
     </main>
