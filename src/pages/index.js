@@ -4,30 +4,30 @@ import { Inter, Source_Code_Pro } from "next/font/google";
 const inter = Inter({ subsets: ["latin"] });
 const Source = Source_Code_Pro({ subsets: ["latin"] });
 const projects = [
-  {
-    title: "Key stash",
-    description:
-      "Key stash is a secure, user-friendly application for managing your various keys and passwords. It uses state-of-the-art encryption to ensure your data is always safe.",
-    link: "link-to-project-1",
-  },
+  // {
+  //   title: "Key stash",
+  //   description:
+  //     "Key stash is a secure, user-friendly application for managing your various keys and passwords. It uses state-of-the-art encryption to ensure your data is always safe.",
+  //   link: "link-to-project-1",
+  // },
   {
     title: "Lets go",
     description:
       "Lets go is a social event planning application that helps you organize and discover events. It not only provides information about various events, but also allows you to create and share your own events. With its social features, you can connect with other attendees, share your experiences, and make your events more engaging and memorable.",
-    link: "link-to-project-2",
+    link: "https://letsgo-mvp.vercel.app",
   },
-  {
-    title: "Bionic Parser",
-    description:
-      "Bionic Parser is a powerful tool for parsing complex data structures. It uses advanced algorithms to accurately parse and extract information from various data formats.",
-    link: "link-to-project-3",
-  },
-  {
-    title: "Doormort",
-    description:
-      "Doormort is a comprehensive real estate application that simplifies the process of buying, selling, and renting properties. It provides a platform for property listings, virtual tours, price comparisons, and direct communication with real estate agents. With its intuitive interface and powerful features, Doormort makes real estate transactions easy and accessible for everyone.",
-    link: "link-to-project-4",
-  },
+  // {
+  //   title: "Bionic Parser",
+  //   description:
+  //     "Bionic Parser is a powerful tool for parsing complex data structures. It uses advanced algorithms to accurately parse and extract information from various data formats.",
+  //   link: "link-to-project-3",
+  // },
+  // {
+  //   title: "Doormort",
+  //   description:
+  //     "Doormort is a comprehensive real estate application that simplifies the process of buying, selling, and renting properties. It provides a platform for property listings, virtual tours, price comparisons, and direct communication with real estate agents. With its intuitive interface and powerful features, Doormort makes real estate transactions easy and accessible for everyone.",
+  //   link: "link-to-project-4",
+  // },
 ];
 export default function Home() {
   return (
