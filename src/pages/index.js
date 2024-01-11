@@ -37,13 +37,13 @@ export default function Home() {
       <div className="p-4 z-10 max-w-5xl w-full items-center font-mono text-sm ">
         <h1 className="text-3xl">Innovative Software Engineer</h1>
         <p className="mt-3">
-          Hello! I'm Ohioze Alex Omiunu, but you can call me Alex. I'm a
-          Software Engineer with a passion for turning ideas into reality. I
-          don't just write code; I create solutions that make a difference. With
-          a robust skill set in both front-end and back-end technologies, I
+          Hello! I&apos;m Ohioze Alex Omiunu, but you can call me Alex. I&apos;m
+          a Software Engineer with a passion for turning ideas into reality. I
+          don&apos;t just write code; I create solutions that make a difference.
+          With a robust skill set in both front-end and back-end technologies, I
           craft seamless, user-friendly web applications that users love and
           clients admire. My commitment goes beyond delivering code; I provide
-          solutions that solve real-world problems. Let's transform your
+          solutions that solve real-world problems. Let&apos;s transform your
           concepts into impressive digital experiences together.
         </p>
 
